@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+section{
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.banner{
+    background: url(img/cielo.jpg);
+    background-size: cover;
+}
+
+section.banner .content{
+    text-align: center;
+}
+
+section.banner .content h1{
+    font-size: 120px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+
+section.banner .content a{
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+
+section.banner .content a:hover{
+    background: #0e4bd8;
+    border: 2px solid #0e4bd8;
+}
+
+.post{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+}
+
+.post img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.post .btn{
+    position: absolute;
+    border: 2px solid #0e4bd8;
+    color: white;
+    background: #0e4bd8;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.post .btn.prev{
+    top: 50px;
+    left: -80px;
+}
+
+.post .btn.next{
+    bottom: 50px;
+    right: -80px;
+}
+
+.post-title{
+    position: absolute;
+    background: rgba(0, 0, 0, .9);
+    color: #fff;
+    bottom: 20px;
+    left: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px;
+    line-height: 40px;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+}
+
+.post-date{
+    position: absolute;
+    border: 2px solid #0e4bd8;
+    top: -50px;
+    right: 50px;
+    background: #0e4bd8;
+    color: white;
+    padding: 20px;
+}
+
+.post-date span{
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.post-date span:nth-child(1){
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.post-date span:nth-child(2),
+.post-date span:nth-child(3){
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#post1,#post2,#post3{
+    background: url(img/luna2.jpg);
+    background-size: cover;
+}
